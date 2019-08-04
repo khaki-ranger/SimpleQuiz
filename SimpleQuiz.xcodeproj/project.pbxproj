@@ -12,6 +12,8 @@
 		D1CC3CC722F67F9B00D8EC8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1CC3CC522F67F9B00D8EC8C /* Main.storyboard */; };
 		D1CC3CC922F67F9D00D8EC8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1CC3CC822F67F9D00D8EC8C /* Assets.xcassets */; };
 		D1CC3CCC22F67F9D00D8EC8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1CC3CCA22F67F9D00D8EC8C /* LaunchScreen.storyboard */; };
+		D1CC3CD522F6807400D8EC8C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CC3CD422F6807400D8EC8C /* AudioToolbox.framework */; };
+		D1CC3CD722F6856700D8EC8C /* custom.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D1CC3CD622F6856700D8EC8C /* custom.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		D1CC3CC822F67F9D00D8EC8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1CC3CCB22F67F9D00D8EC8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D1CC3CCD22F67F9D00D8EC8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1CC3CD422F6807400D8EC8C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D1CC3CD622F6856700D8EC8C /* custom.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = custom.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1CC3CD522F6807400D8EC8C /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,7 @@
 			children = (
 				D1CC3CC022F67F9B00D8EC8C /* SimpleQuiz */,
 				D1CC3CBF22F67F9B00D8EC8C /* Products */,
+				D1CC3CD322F6807300D8EC8C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +60,7 @@
 		D1CC3CC022F67F9B00D8EC8C /* SimpleQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				D1CC3CD622F6856700D8EC8C /* custom.mp3 */,
 				D1CC3CC122F67F9B00D8EC8C /* AppDelegate.swift */,
 				D1CC3CC322F67F9B00D8EC8C /* ViewController.swift */,
 				D1CC3CC522F67F9B00D8EC8C /* Main.storyboard */,
@@ -62,6 +69,14 @@
 				D1CC3CCD22F67F9D00D8EC8C /* Info.plist */,
 			);
 			path = SimpleQuiz;
+			sourceTree = "<group>";
+		};
+		D1CC3CD322F6807300D8EC8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1CC3CD422F6807400D8EC8C /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +140,7 @@
 				D1CC3CCC22F67F9D00D8EC8C /* LaunchScreen.storyboard in Resources */,
 				D1CC3CC922F67F9D00D8EC8C /* Assets.xcassets in Resources */,
 				D1CC3CC722F67F9B00D8EC8C /* Main.storyboard in Resources */,
+				D1CC3CD722F6856700D8EC8C /* custom.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,11 +13,42 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SimpleQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzJ-7R-seZ">
+                                <rect key="frame" x="126" y="188.5" width="123" height="30"/>
+                                <state key="normal" title="システムサウンド"/>
+                                <connections>
+                                    <action selector="tapSystemSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="baM-dW-79K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1aA-WN-mN4">
+                                <rect key="frame" x="126" y="318.5" width="123" height="30"/>
+                                <state key="normal" title="カスタムサウンド"/>
+                                <connections>
+                                    <action selector="tapCustomSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hIv-2s-rCg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHE-3s-U0m">
+                                <rect key="frame" x="126" y="448.5" width="123" height="30"/>
+                                <state key="normal" title="バイブレーション"/>
+                                <connections>
+                                    <action selector="tapVibration:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tgV-ix-5GQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1aA-WN-mN4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Krf-VS-Tf2"/>
+                            <constraint firstItem="1aA-WN-mN4" firstAttribute="top" secondItem="nzJ-7R-seZ" secondAttribute="bottom" constant="100" id="ODv-9b-9aF"/>
+                            <constraint firstItem="nzJ-7R-seZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="end-Nd-5fR"/>
+                            <constraint firstItem="JHE-3s-U0m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mwl-dR-KFW"/>
+                            <constraint firstItem="1aA-WN-mN4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nJj-dF-xOg"/>
+                            <constraint firstItem="JHE-3s-U0m" firstAttribute="top" secondItem="1aA-WN-mN4" secondAttribute="bottom" constant="100" id="zER-9F-mw3"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
