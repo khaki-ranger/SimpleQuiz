@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -43,5 +44,97 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="XgR-d7-JLs">
+            <objects>
+                <viewController id="Ml0-wS-kZJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UWb-t0-b3t">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9S-YZ-rx1">
+                                <rect key="frame" x="16" y="42" width="20.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="ヤフオク!にて過去最高額で落札された商品はなんでしょう？" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Jtz-vK-YYM">
+                                <rect key="frame" x="16" y="83.5" width="343" height="128.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="n80-wq-bO3">
+                                <rect key="frame" x="16" y="207" width="343" height="440"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwK-qH-wUI">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="102.5"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="恐竜の化石">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U4Y-mg-zt7">
+                                        <rect key="frame" x="0.0" y="112.5" width="343" height="102.5"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="スペースシャトル">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTc-MT-Kox">
+                                        <rect key="frame" x="0.0" y="225" width="343" height="102.5"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="タイムマシン">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bts-q1-EvL">
+                                        <rect key="frame" x="0.0" y="337.5" width="343" height="102.5"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="無人島　">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="correct" translatesAutoresizingMaskIntoConstraints="NO" id="3aN-NO-o3h">
+                                <rect key="frame" x="86" y="232" width="202" height="202"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="incorrect" translatesAutoresizingMaskIntoConstraints="NO" id="KeW-fW-6WC">
+                                <rect key="frame" x="86.5" y="232.5" width="201" height="201"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="IOp-Xd-Coi" firstAttribute="bottom" secondItem="Jtz-vK-YYM" secondAttribute="bottom" constant="455" id="3vi-TV-VDS"/>
+                            <constraint firstItem="KeW-fW-6WC" firstAttribute="centerX" secondItem="UWb-t0-b3t" secondAttribute="centerX" id="9AU-Yb-o9L"/>
+                            <constraint firstItem="Jtz-vK-YYM" firstAttribute="leading" secondItem="n80-wq-bO3" secondAttribute="leading" id="Bzm-N9-Bva"/>
+                            <constraint firstItem="3aN-NO-o3h" firstAttribute="centerY" secondItem="UWb-t0-b3t" secondAttribute="centerY" id="Cpc-TS-6uV"/>
+                            <constraint firstItem="Jtz-vK-YYM" firstAttribute="trailing" secondItem="n80-wq-bO3" secondAttribute="trailing" id="EDw-8q-GeT"/>
+                            <constraint firstItem="Jtz-vK-YYM" firstAttribute="trailing" secondItem="UWb-t0-b3t" secondAttribute="trailingMargin" id="GgP-9j-jlz"/>
+                            <constraint firstItem="w9S-YZ-rx1" firstAttribute="top" secondItem="IOp-Xd-Coi" secondAttribute="top" constant="22" id="JyK-6H-20z"/>
+                            <constraint firstItem="n80-wq-bO3" firstAttribute="top" secondItem="UWb-t0-b3t" secondAttribute="top" constant="207" id="N5W-2g-aYa"/>
+                            <constraint firstItem="3aN-NO-o3h" firstAttribute="centerX" secondItem="UWb-t0-b3t" secondAttribute="centerX" id="NTk-fB-sgp"/>
+                            <constraint firstItem="Jtz-vK-YYM" firstAttribute="top" secondItem="w9S-YZ-rx1" secondAttribute="bottom" constant="21" id="OGy-zi-0pI"/>
+                            <constraint firstAttribute="bottom" secondItem="n80-wq-bO3" secondAttribute="bottom" constant="20" symbolic="YES" id="PLr-7O-y9V"/>
+                            <constraint firstItem="w9S-YZ-rx1" firstAttribute="leading" secondItem="Jtz-vK-YYM" secondAttribute="leading" id="eDB-xL-fxu"/>
+                            <constraint firstItem="w9S-YZ-rx1" firstAttribute="leading" secondItem="UWb-t0-b3t" secondAttribute="leadingMargin" id="lDf-2W-03e"/>
+                            <constraint firstItem="KeW-fW-6WC" firstAttribute="centerY" secondItem="UWb-t0-b3t" secondAttribute="centerY" id="phH-up-ujv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IOp-Xd-Coi"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ujK-GW-mxo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1423" y="33"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="correct" width="202" height="202"/>
+        <image name="incorrect" width="201" height="201"/>
+    </resources>
 </document>
