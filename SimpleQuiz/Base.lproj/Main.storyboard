@@ -29,6 +29,9 @@
                                 <rect key="frame" x="150" y="396" width="74" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="START"/>
+                                <connections>
+                                    <segue destination="Ml0-wS-kZJ" kind="presentation" id="Cmu-Ov-Twg"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -47,7 +50,7 @@
         <!--View Controller-->
         <scene sceneID="XgR-d7-JLs">
             <objects>
-                <viewController id="Ml0-wS-kZJ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="question" id="Ml0-wS-kZJ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UWb-t0-b3t">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -135,7 +138,7 @@
         <!--View Controller-->
         <scene sceneID="SWB-0e-bWt">
             <objects>
-                <viewController id="9wa-97-6uO" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="result" id="9wa-97-6uO" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Ju-DT-3FJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
