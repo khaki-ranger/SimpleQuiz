@@ -130,7 +130,60 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ujK-GW-mxo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1423" y="33"/>
+            <point key="canvasLocation" x="870" y="33"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="SWB-0e-bWt">
+            <objects>
+                <viewController id="9wa-97-6uO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Ju-DT-3FJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ck9-6q-oys">
+                                <rect key="frame" x="16" y="81" width="343" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正解率は" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yA-aU-AGT">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="46.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ete-Pk-At8">
+                                        <rect key="frame" x="0.0" y="76.5" width="343" height="47"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="でした" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kwD-hJ-6ui">
+                                        <rect key="frame" x="0.0" y="153.5" width="343" height="46.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="txV-9g-l2q">
+                                <rect key="frame" x="98" y="467" width="178" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="タイトルへ戻る"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ck9-6q-oys" firstAttribute="trailing" secondItem="5Ju-DT-3FJ" secondAttribute="trailingMargin" id="1Zn-3B-8V5"/>
+                            <constraint firstAttribute="bottom" secondItem="ck9-6q-oys" secondAttribute="bottom" constant="386" id="241-sv-0Zf"/>
+                            <constraint firstItem="ck9-6q-oys" firstAttribute="top" secondItem="b3T-9b-BzW" secondAttribute="top" constant="61" id="8hE-WW-5kl"/>
+                            <constraint firstItem="ck9-6q-oys" firstAttribute="centerX" secondItem="txV-9g-l2q" secondAttribute="centerX" id="Gx5-as-Q33"/>
+                            <constraint firstItem="b3T-9b-BzW" firstAttribute="bottom" secondItem="txV-9g-l2q" secondAttribute="bottom" constant="158" id="Jol-Jv-e2i"/>
+                            <constraint firstItem="ck9-6q-oys" firstAttribute="leading" secondItem="5Ju-DT-3FJ" secondAttribute="leadingMargin" id="t3s-GE-LJC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="b3T-9b-BzW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vtd-o7-Nhm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1693.5999999999999" y="32.833583208395808"/>
         </scene>
     </scenes>
     <resources>
