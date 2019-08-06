@@ -48,10 +48,10 @@
             </objects>
             <point key="canvasLocation" x="718" y="33"/>
         </scene>
-        <!--View Controller-->
+        <!--Question View Controller-->
         <scene sceneID="XgR-d7-JLs">
             <objects>
-                <viewController storyboardIdentifier="question" id="Ml0-wS-kZJ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="question" id="Ml0-wS-kZJ" customClass="QuestionViewController" customModule="SimpleQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UWb-t0-b3t">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -78,6 +78,9 @@
                                         <state key="normal" title="恐竜の化石">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tapAnswer1Button:" destination="Ml0-wS-kZJ" eventType="touchUpInside" id="CBo-2c-Dte"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U4Y-mg-zt7">
                                         <rect key="frame" x="0.0" y="112.5" width="343" height="102.5"/>
@@ -86,6 +89,9 @@
                                         <state key="normal" title="スペースシャトル">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tapAnswer2Button:" destination="Ml0-wS-kZJ" eventType="touchUpInside" id="18x-6V-8cq"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTc-MT-Kox">
                                         <rect key="frame" x="0.0" y="225" width="343" height="102.5"/>
@@ -94,6 +100,9 @@
                                         <state key="normal" title="タイムマシン">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tapAnswer3Button:" destination="Ml0-wS-kZJ" eventType="touchUpInside" id="9q1-rS-fkz"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bts-q1-EvL">
                                         <rect key="frame" x="0.0" y="337.5" width="343" height="102.5"/>
@@ -102,6 +111,9 @@
                                         <state key="normal" title="無人島　">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tapAnswer4Button:" destination="Ml0-wS-kZJ" eventType="touchUpInside" id="kSp-cd-cxN"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -131,6 +143,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IOp-Xd-Coi"/>
                     </view>
+                    <connections>
+                        <outlet property="answer1Button" destination="zwK-qH-wUI" id="lk2-SL-d8Z"/>
+                        <outlet property="answer2Button" destination="U4Y-mg-zt7" id="jI0-OO-9Yv"/>
+                        <outlet property="answer3Button" destination="fTc-MT-Kox" id="WeL-RA-2ov"/>
+                        <outlet property="answer4Button" destination="bts-q1-EvL" id="K8K-Oa-ICI"/>
+                        <outlet property="correctImageView" destination="3aN-NO-o3h" id="8sz-hi-3RC"/>
+                        <outlet property="incorrectImageView" destination="KeW-fW-6WC" id="UaX-jX-YSj"/>
+                        <outlet property="questionNoLabel" destination="w9S-YZ-rx1" id="lUP-0s-Q9P"/>
+                        <outlet property="questionTextView" destination="Jtz-vK-YYM" id="kGG-eQ-YWK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ujK-GW-mxo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
