@@ -158,10 +158,10 @@
             </objects>
             <point key="canvasLocation" x="1487" y="33"/>
         </scene>
-        <!--View Controller-->
+        <!--Result View Controller-->
         <scene sceneID="SWB-0e-bWt">
             <objects>
-                <viewController storyboardIdentifier="result" id="9wa-97-6uO" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="result" id="9wa-97-6uO" customClass="ResultViewController" customModule="SimpleQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Ju-DT-3FJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -193,6 +193,9 @@
                                 <rect key="frame" x="98" y="467" width="178" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="タイトルへ戻る"/>
+                                <connections>
+                                    <segue destination="oXt-4N-7aa" kind="unwind" unwindAction="goToTitle:" id="XWL-HS-Y9p"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -206,8 +209,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="b3T-9b-BzW"/>
                     </view>
+                    <connections>
+                        <outlet property="correctPercentLabel" destination="ete-Pk-At8" id="Rcd-ev-H6y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vtd-o7-Nhm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="oXt-4N-7aa" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2265" y="33"/>
         </scene>
